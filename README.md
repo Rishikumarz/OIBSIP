@@ -1,2 +1,20 @@
-# OIBSIP
-OIBSIP (Oasis Infobyte Tech Internship Projects) Repository showcasing Level 1 tasks completed during my tech internship at Oasis Infobyte: Landing Page, Portfolio, and Temperature Converter Website.
+# OIBSIP (Oasis Infobyte Tech Internship Projects)
+
+Welcome to my tech internship repository for Oasis Infobyte! This repository showcases the Level 1 tasks completed during my internship.
+
+## Tasks Completed
+
+1. **Task 1: Landing Page**
+   - Developed a landing page using HTML, CSS, and JavaScript to promote a fictional product. Included responsive design and interactive elements.
+
+2. **Task 2: Portfolio**
+   - Created a personal portfolio website to showcase skills, projects, and contact information. Designed with a clean layout using Bootstrap framework.
+
+3. **Task 3: Temperature Converter Website**
+   - Built a web application that converts temperatures between Celsius, Fahrenheit, and Kelvin. Implemented using JavaScript for calculations and user interface.
+
+## Repository Structure
+
+Each task folder contains project files (HTML, CSS, JavaScript, etc.) used for development. Explore each folder for specific task details and project resources.
+
+Feel free to explore the repository and check out the projects I’ve worked on during my internship. If you have any questions or feedback, please reach out.
