@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  width: 100px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  margin-top: 5px;
+}
+
+nav ul li ul li a {
+  color: white;
+}
+
+main {
+  padding-top: 60px;
+  /* Adjust according to the header height */
+}
+
+.movie-container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.movie {
+  width: 800px;
+  height: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.movie p {
+  font-size: 0.9em;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .movie {
+    width: 90%;
+    height: 350px; 
+    margin: 10px auto;
+  }
+
+  .movie-container {
+    margin: 20px;
+  }
+}
+
+
+button:hover {
+  background-color: red;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
