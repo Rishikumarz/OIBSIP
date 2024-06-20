@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+  --largeHeading: 1.3rem;
+  --smallHeading: 0.9rem;
+  --lightColor: white;
+  --darkColor: black;
+  --highlightColor: limegreen;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #00008B, #FF0000);
+  color: var(--lightColor);
+}
+
+
+#content-container {
+  position: relative;
+  width: 290px;
+  margin: 0px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#container-heading {
+  margin: 0px auto 20px auto;
+  text-align: center;
+  font-size: var(--largeHeading);
+  font-weight: 540;
+  color: var(--lightColor);
+}
+
+#calculations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+.content-division {
+  width: 100%;
+}
+
+.division-heading {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--smallHeading);
+  font-weight: 550;
+  color: var(--lightColor);
+  padding: 0px 5px;
+  margin: 5px 0px 10px 0px;
+}
+
+.division-heading::before,
+.division-heading::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: var(--lightColor);
+}
+
+.division-heading::before {
+  left: 100%;
+}
+
+.division-heading::after {
+  right: 100%;
+}
+
+.inputs-container {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+}
+
+.inputs {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: var(--smallHeading);
+}
+
+.input-field,
+.dropdown {
+  padding: 5px 10px;
+  background-color: white;
+  color: var(--darkColor);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown,
+#convert-btn,
+footer a {
+  cursor: pointer;
+}
+
+.dropdown-container::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--smallHeading);
+  color: rgba(0, 0, 0, 0.5);
+  content: "\25bc";
+  pointer-events: none;
+}
+
+.dropdown {
+  appearance: none;
+}
+
+#input-box {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+#input-box:focus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), inset 0px -4px 1px rgba(255, 255, 255, 0.5);
+}
+
+#result-box {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#convert-btn {
+  margin: 10px 0px;
+  padding: 10px;
+  color: var(--darkColor);
+  background-color: var(--highlightColor);
+  box-shadow: 0px 0px 4px rgba(0, 255, 0, 0.5);
+}
+
+#convert-btn:hover {
+  background-color: var(--darkColor);
+  color: var(--highlightColor);
+}
+
+#convert-btn:active {
+  background-color: var(--highlightColor);
+  color: var(--darkColor);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: 550;
+  text-align: center;
+  padding: 15px 0px;
+  color: var(--lightColor);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--highlightColor);
+}
+
+footer a:hover {
+  color: var(--lightColor);
+}
+
+@media(min-width: 481px) {
+  #content-container {
+    width: 360px;
+    padding: 25px 30px;
+  }
+
+  #calculations-container {
+    padding: 20px 30px;
+  }
+
+  .input-field,
+  .dropdown {
+    padding: 7px 10px;
+  }
+}
+
+@media(min-width: 768px) {
+  :root {
+    --largeHeading: 1.6rem;
+    --smallHeading: 1.1rem;
+  }
+
+  #content-container {
+    width: 480px;
+    padding: 35px;
+  }
+
+  #container-heading {
+    margin: 0px auto 25px auto;
+  }
+
+  #calculation-container {
+    padding: 15px 40px;
+  }
+
+  .division-heading::before {
+    width: 100px;
+    height: 1.7px;
+  }
+
+  .division-heading::after {
+    width: 100px;
+    height: 1.7px;
+  }
+
+  .inputs-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+  }
+
+  .inputs {
+    font-weight: 550;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+    color: var(--highlightColor);
+  }
+}

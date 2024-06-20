@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="gold">
+  <meta name="author" content="Rajat">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div id="content-container">
+    <h2 id="container-heading">Temperature Converter</h2>
+    <div id="calculations-container">
+      <div class="content-division">
+        <div class="division-heading">From</div>
+        <div class="inputs-container">
+          <input type="number" class="input-field inputs" name="input" id="input-box" placeholder="0" required>
+          <div class="dropdown-container">
+            <select class="dropdown inputs" id="input-dropdown">
+              <option value="Celsius" selected>Degree Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="Kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="content-division">
+        <div class="division-heading">To</div>
+        <div class="inputs-container">
+          <input type="text" class="input-field inputs" name="result" id="result-box" placeholder="0" disabled>
+          <div class="dropdown-container">
+            <select class="dropdown inputs" id="result-dropdown">
+              <option value="Fahrenheit" selected>Fahrenheit</option>
+              <option value="Celsius">Degree Celsius</option>
+              <option value="Kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button id="convert-btn" class="inputs" onclick="converter()">Convert</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&#169; 2024 Rajat Kumar. All rights reserved. Designed by
+      <a href="https://www.linkedin.com/in/rajatkrz" target="_blank" class="footer-link">Rajat Kumar</a>.
+    </p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
