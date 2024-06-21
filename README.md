@@ -6,9 +6,11 @@ Welcome to my tech internship repository for Oasis Infobyte! This repository sho
 
 1. **Task 1: Landing Page**
    - Developed a landing page using HTML, CSS, and JavaScript to promote a fictional product. Included responsive design and interactive elements.
+   - here is the live page - https://movie-booking-site-three.vercel.app/
 
 2. **Task 2: Portfolio**
    - Created a personal portfolio website to showcase skills, projects, and contact information. Designed with a clean layout using Bootstrap framework.
+   - portfolio link - https://oibsip-chi-beryl.vercel.app/
 
 3. **Task 3: Temperature Converter Website**
    - Built a web application that converts temperatures between Celsius, Fahrenheit, and Kelvin. Implemented using JavaScript for calculations and user interface.
